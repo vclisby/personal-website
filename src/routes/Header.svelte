@@ -3,20 +3,23 @@
 </script>
 
 <header>
-	<div>LOGO</div>
-	<nav>
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/work' ? 'page' : undefined}>
-				<a href="/work">Work</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined}>
-				<a href="/blog">Blog</a>
-			</li>
-		</ul>
-	</nav>
+	<div>Victor Clisby</div>
+	<div class="nav-and-theme">
+		<nav>
+			<ul>
+				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+					<a href="/">Home</a>
+				</li>
+				<li aria-current={$page.url.pathname === '/work' ? 'page' : undefined}>
+					<a href="/work">Work</a>
+				</li>
+				<li aria-current={$page.url.pathname === '/blog' ? 'page' : undefined}>
+					<a href="/blog">Blog</a>
+				</li>
+			</ul>
+		</nav>
+		<input type="checkbox" class="theme-switch" />
+	</div>
 </header>
 
 <style>
@@ -24,8 +27,13 @@
 		display: flex;
 		justify-content: space-between;
 		height: 50px;
-		background-color: #f2f2f2;
-		box-shadow: 0 0 5px #666;
+		background-color: var(--color-header-background);
+		box-shadow: 0 0 5px #666666;
+		z-index: 1;
+	}
+
+	.nav-and-theme {
+		display: flex;
 	}
 
 	nav {
