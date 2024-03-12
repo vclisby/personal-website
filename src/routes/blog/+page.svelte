@@ -1,1 +1,22 @@
+<script>
+	export let data;
+</script>
+
+<svelte:head>
+	<title>Blog - Victor Clisby</title>
+</svelte:head>
+
 <section><h1>Victor Clisby Blog</h1></section>
+
+<ul>
+	{#each data.posts as post}
+		<li>
+			<h2>
+				<a href={post.path}>
+					{post.metadata.title}
+				</a>
+			</h2>
+			Published {post.metadata.date}
+		</li>
+	{/each}
+</ul>
