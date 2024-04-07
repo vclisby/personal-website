@@ -2,21 +2,17 @@
 	/* TODO (Victor): I could probably just set these light theme styles as the defaults and then i can remove them from here? */
 
 	/* Light theme variables */
-	--light-color-bg-0: rgb(202, 216, 228);
-	--light-color-bg-1: hsl(209, 36%, 86%);
-	--light-color-bg-2: hsl(224, 44%, 95%);
+	--light-color-bg: #f2f2f2;
 
 	--light-color-text: #333333;
 	--light-color-link: #333333;
 	--light-color-active-link: #8a8a8a;
 
-	--light-color-header-background: #f2f2f2;
-	--light-color-footer-background: #f2f2f2;
+	--light-color-header-background: #ee5151;
+	--light-color-footer-background: #ee5151;
 
 	/* Dark theme variables */
-	--dark-color-bg-0: rgb(65, 71, 75);
-	--dark-color-bg-1: hsl(205, 7%, 33%);
-	--dark-color-bg-2: hsl(240, 1%, 28%);
+	--dark-color-bg: #f2f2f2;
 
 	--dark-color-text: #f2f2f2;
 	--dark-color-link: #f2f2f2;
@@ -26,9 +22,7 @@
 	--dark-color-footer-background: #333333;
 
 	/* Current theme variables */
-	--color-bg-0: var(--light-color-bg-0);
-	--color-bg-1: var(--light-color-bg-1);
-	--color-bg-2: var(--light-color-bg-2);
+	--color-bg: var(--light-color-bg);
 
 	--color-text: var(--light-color-text);
 	--color-link: var(--light-color-link);
@@ -48,12 +42,12 @@ body {
 }
 
 body:has(.app-container .app header .nav-and-theme input:checked) {
-	--color-bg-0: var(--dark-color-bg-0);
-	--color-bg-1: var(--dark-color-bg-1);
-	--color-bg-2: var(--dark-color-bg-2);
+	--color-bg: var(--dark-color-bg);
+
 	--color-text: var(--dark-color-text);
 	--color-link: var(--dark-color-link);
 	--color-active-link: var(--dark-color-active-link);
+
 	--color-header-background: var(--dark-color-header-background);
 	--color-footer-background: var(--dark-color-footer-background);
 }

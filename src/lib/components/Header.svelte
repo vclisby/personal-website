@@ -29,7 +29,6 @@
 		justify-content: space-between;
 		height: 50px;
 		background-color: var(--color-header-background);
-		box-shadow: 0 0 5px #666666;
 		z-index: 1;
 	}
 
