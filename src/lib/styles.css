@@ -2,15 +2,15 @@
 	/* TODO (Victor): I could probably just set these light theme styles as the defaults and then i can remove them from here? */
 
 	/* Light theme variables */
-	--light-color-bg: #f2f2f2;
+	--light-color-bg: #f7f7f7;
 
 	--light-color-text: #666666;
 	--light-color-link: #666666;
 
-	--light-color-header-background: #ee5151;
-	--light-color-header-text: #f2f2f2;
-	--light-color-header-link: #f2f2f2;
-	--light-color-footer-background: #ee5151;
+	--light-color-header-background: #f7f7f7;
+	--light-color-header-text: #7fb8bb;
+	--light-color-header-link: #666666;
+	--light-color-footer-background: #f7f7f7;
 
 	/* Dark theme variables */
 	--dark-color-bg: #f2f2f2;

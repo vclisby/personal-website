@@ -1,10 +1,13 @@
 <script>
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
+	import ghlogo from '$lib/assets/icons8-github.svg';
+	import lilogo from '$lib/assets/icons8-linkedin.svg';
 </script>
 
 <header>
-	<div class="title">Victor Clisby</div>
+	<div class="title">VICTOR CLISBY</div>
+	<input type="checkbox" class="theme-switch" />
 	<div class="nav-and-theme">
 		<nav>
 			<ul>
@@ -19,7 +22,8 @@
 				</li>
 			</ul>
 		</nav>
-		<input type="checkbox" class="theme-switch" />
+		<img alt="GitHub Logo" src={ghlogo} width="25" />
+		<img alt="LinkedIn Logo" src={lilogo} width="25" />
 	</div>
 </header>
 
@@ -31,6 +35,7 @@
 		height: 50px;
 		color: var(--color-header-text);
 		background-color: var(--color-header-background);
+		box-shadow: 0 0 2px rgba(102, 102, 102, 0.3);
 		z-index: 1;
 	}
 
@@ -40,6 +45,7 @@
 
 	.nav-and-theme {
 		display: flex;
+		align-items: center;
 	}
 
 	nav {
