@@ -22,6 +22,7 @@
 				</li>
 			</ul>
 		</nav>
+		<div class="vertical-separator" />
 		<img alt="GitHub Logo" src={ghlogo} width="25" />
 		<img alt="LinkedIn Logo" src={lilogo} width="25" />
 	</div>
@@ -37,6 +38,12 @@
 		background-color: var(--color-header-background);
 		box-shadow: 0 0 2px rgba(102, 102, 102, 0.3);
 		z-index: 1;
+	}
+
+	.vertical-separator {
+		border: 1px solid rgba(102, 102, 102, 0.1);
+		height: 20px;
+		margin: 0 10px;
 	}
 
 	.title {
