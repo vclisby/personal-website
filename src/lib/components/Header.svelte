@@ -56,8 +56,8 @@
 	}
 
 	.title {
-		font-size: 22px;
-		font-weight: bold;
+		font-size: 28px;
+		font-family: 'Plus Jakarta Sans', sans-serif;
 	}
 
 	.nav-and-theme {
