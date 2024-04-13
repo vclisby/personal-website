@@ -11,14 +11,17 @@
 	<div class="nav-and-theme">
 		<nav>
 			<ul>
-				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+				<li class="home-item" aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 					<a href="{base}/">Home</a>
+					<div class="active-dot"></div>
 				</li>
-				<li aria-current={$page.url.pathname === '/work' ? 'page' : undefined}>
+				<li class="work-item" aria-current={$page.url.pathname === '/work' ? 'page' : undefined}>
 					<a href="{base}/work">Work</a>
+					<div class="active-dot"></div>
 				</li>
-				<li aria-current={$page.url.pathname === '/blog' ? 'page' : undefined}>
+				<li class="blog-item" aria-current={$page.url.pathname === '/blog' ? 'page' : undefined}>
 					<a href="{base}/blog">Blog</a>
+					<div class="active-dot"></div>
 				</li>
 			</ul>
 		</nav>
@@ -33,11 +36,17 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 0 10px;
 		height: 50px;
 		color: var(--color-header-text);
 		background-color: var(--color-header-background);
 		box-shadow: 0 0 2px rgba(102, 102, 102, 0.3);
 		z-index: 1;
+	}
+
+	.theme-switch {
+		/* TODO (Victor): Undo this when it's time to implement the theming properly... */
+		display: none;
 	}
 
 	.vertical-separator {
@@ -48,6 +57,7 @@
 
 	.title {
 		font-size: 22px;
+		font-weight: bold;
 	}
 
 	.nav-and-theme {
@@ -73,13 +83,28 @@
 		padding: 0;
 	}
 
-	li[aria-current='page'] a {
-		outline-width: 1px;
-		/* TODO: Come up with some better active link styling... */
-		outline-style: dashed;
-	}
-
 	a:hover {
 		color: var(--color-theme-1);
+	}
+
+	li[aria-current='page'] .active-dot {
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		background-color: rgba(102, 102, 102, 0.3);
+		border-radius: 5px;
+		margin-top: 3px;
+	}
+
+	[aria-current='page'].home-item .active-dot {
+		margin-left: 28px;
+	}
+
+	[aria-current='page'].work-item .active-dot {
+		margin-left: 28px;
+	}
+
+	[aria-current='page'].blog-item .active-dot {
+		margin-left: 24px;
 	}
 </style>
