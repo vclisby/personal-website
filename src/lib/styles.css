@@ -37,7 +37,7 @@
 
 body {
 	font-family: Arial, sans-serif;
-	min-height: 100vh;
+	height: 100vh;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -62,4 +62,9 @@ body .app-container .app main {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
+	overflow: hidden;
+}
+
+body .app-container .app main {
+	overflow-y: auto;
 }
