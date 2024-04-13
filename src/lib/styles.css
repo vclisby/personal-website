@@ -4,21 +4,23 @@
 	/* Light theme variables */
 	--light-color-bg: #f2f2f2;
 
-	--light-color-text: #333333;
-	--light-color-link: #333333;
-	--light-color-active-link: #8a8a8a;
+	--light-color-text: #666666;
+	--light-color-link: #666666;
 
 	--light-color-header-background: #ee5151;
+	--light-color-header-text: #f2f2f2;
+	--light-color-header-link: #f2f2f2;
 	--light-color-footer-background: #ee5151;
 
 	/* Dark theme variables */
 	--dark-color-bg: #f2f2f2;
 
-	--dark-color-text: #f2f2f2;
-	--dark-color-link: #f2f2f2;
-	--dark-color-active-link: #dbdbdb;
+	--dark-color-text: #666666;
+	--dark-color-link: #666666;
 
 	--dark-color-header-background: #333333;
+	--dark-color-header-text: #f2f2f2;
+	--dark-color-header-link: #f2f2f2;
 	--dark-color-footer-background: #333333;
 
 	/* Current theme variables */
@@ -26,9 +28,10 @@
 
 	--color-text: var(--light-color-text);
 	--color-link: var(--light-color-link);
-	--color-active-link: var(--light-color-active-link);
 
 	--color-header-background: var(--light-color-header-background);
+	--color-header-text: var(--light-color-header-text);
+	--color-header-link: var(--light-color-header-link);
 	--color-footer-background: var(--light-color-footer-background);
 }
 
@@ -46,9 +49,10 @@ body:has(.app-container .app header .nav-and-theme input:checked) {
 
 	--color-text: var(--dark-color-text);
 	--color-link: var(--dark-color-link);
-	--color-active-link: var(--dark-color-active-link);
 
 	--color-header-background: var(--dark-color-header-background);
+	--color-header-text: var(--dark-color-header-text);
+	--color-header-link: var(--dark-color-header-link);
 	--color-footer-background: var(--dark-color-footer-background);
 }
 

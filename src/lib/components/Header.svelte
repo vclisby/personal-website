@@ -4,7 +4,7 @@
 </script>
 
 <header>
-	<div>Victor Clisby</div>
+	<div class="title">Victor Clisby</div>
 	<div class="nav-and-theme">
 		<nav>
 			<ul>
@@ -27,9 +27,15 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		height: 50px;
+		color: var(--color-header-text);
 		background-color: var(--color-header-background);
 		z-index: 1;
+	}
+
+	.title {
+		font-size: 22px;
 	}
 
 	.nav-and-theme {
@@ -39,13 +45,12 @@
 	nav {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 	}
 
 	nav a {
 		text-decoration: none;
 		padding: 0 10px;
-		color: var(--color-link);
+		color: var(--color-header-link);
 	}
 
 	ul {
@@ -56,10 +61,8 @@
 	}
 
 	li[aria-current='page'] a {
-		color: var(--color-active-link);
 		outline-width: 1px;
 		/* TODO: Come up with some better active link styling... */
-		outline-color: var(--color-active-link);
 		outline-style: dashed;
 	}
 
