@@ -11,15 +11,21 @@
 	<div class="nav-and-theme">
 		<nav>
 			<ul>
-				<li class="home-item" aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+				<li class="home-item" aria-current={$page.url.pathname.endsWith('/') ? 'page' : undefined}>
 					<a href="{base}/">Home</a>
 					<div class="active-dot"></div>
 				</li>
-				<li class="work-item" aria-current={$page.url.pathname === '/work' ? 'page' : undefined}>
+				<li
+					class="work-item"
+					aria-current={$page.url.pathname.endsWith('/work') ? 'page' : undefined}
+				>
 					<a href="{base}/work">Work</a>
 					<div class="active-dot"></div>
 				</li>
-				<li class="blog-item" aria-current={$page.url.pathname === '/blog' ? 'page' : undefined}>
+				<li
+					class="blog-item"
+					aria-current={$page.url.pathname.endsWith('/blog') ? 'page' : undefined}
+				>
 					<a href="{base}/blog">Blog</a>
 					<div class="active-dot"></div>
 				</li>
