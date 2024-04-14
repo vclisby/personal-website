@@ -1,6 +1,5 @@
 <script>
 	import Header from '$lib/components/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
 	import '$lib/styles.css';
 </script>
 
@@ -9,7 +8,6 @@
 	<main>
 		<slot />
 	</main>
-	<Footer />
 </div>
 
 <style>

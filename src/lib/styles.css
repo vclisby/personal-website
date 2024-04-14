@@ -10,7 +10,6 @@
 	--light-color-header-background: #f7f7f7;
 	--light-color-header-text: #666666;
 	--light-color-header-link: #666666;
-	--light-color-footer-background: #f7f7f7;
 
 	/* Dark theme variables */
 	--dark-color-bg: #f2f2f2;
@@ -21,7 +20,6 @@
 	--dark-color-header-background: #333333;
 	--dark-color-header-text: #f2f2f2;
 	--dark-color-header-link: #f2f2f2;
-	--dark-color-footer-background: #333333;
 
 	/* Current theme variables */
 	--color-bg: var(--light-color-bg);
@@ -32,7 +30,6 @@
 	--color-header-background: var(--light-color-header-background);
 	--color-header-text: var(--light-color-header-text);
 	--color-header-link: var(--light-color-header-link);
-	--color-footer-background: var(--light-color-footer-background);
 }
 
 body {
@@ -53,7 +50,6 @@ body:has(.app-container .app header .nav-and-theme input:checked) {
 	--color-header-background: var(--dark-color-header-background);
 	--color-header-text: var(--dark-color-header-text);
 	--color-header-link: var(--dark-color-header-link);
-	--color-footer-background: var(--dark-color-footer-background);
 }
 
 body .app-container,
