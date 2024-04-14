@@ -26,8 +26,8 @@
 			</ul>
 		</nav>
 		<div class="vertical-separator" />
-		<img alt="GitHub Logo" src={ghlogo} width="25" />
-		<img alt="LinkedIn Logo" src={lilogo} width="25" />
+		<img alt="GitHub Logo" src={ghlogo} width="30" />
+		<img alt="LinkedIn Logo" src={lilogo} width="30" />
 	</div>
 </header>
 
@@ -106,5 +106,15 @@
 
 	[aria-current='page'].blog-item .active-dot {
 		margin-left: 24px;
+	}
+
+	img {
+		padding-left: 5px;
+	}
+
+	@media screen and (max-width: 600px) {
+		.title {
+			font-size: 18px;
+		}
 	}
 </style>

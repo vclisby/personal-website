@@ -14,7 +14,6 @@
 		urna et pharetra. Velit dignissim sodales ut eu. Sit amet nisl suscipit adipiscing bibendum est
 		ultricies.
 	</p>
-	<div class="button-container"><button>Work</button><button>Blog</button></div>
 </section>
 
 <style>
@@ -33,21 +32,5 @@
 
 	p {
 		max-width: 1200px;
-	}
-
-	.button-container {
-		display: flex;
-		gap: 10px;
-	}
-
-	button {
-		padding: 6px 12px;
-		background-color: #7fb8bb;
-		border: 1px solid #7fb8bb;
-		border-radius: 5px;
-
-		&:hover {
-			background-color: white;
-		}
 	}
 </style>
