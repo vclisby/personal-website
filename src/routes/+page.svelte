@@ -1,5 +1,9 @@
 <script>
 	import logo from '$lib/assets/victor-clisby-cropped.jpg';
+	import LocationPinIcon from '$lib/components/LocationPinIcon.svelte';
+
+	const startDate = new Date(2018, 0, 22);
+	const today = new Date();
 </script>
 
 <svelte:head>
@@ -9,10 +13,16 @@
 <section>
 	<img alt="Victor Clisby @ Huka Falls" src={logo} width="1200" />
 	<p>
-		Introduction here... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas sed tempus
-		urna et pharetra. Velit dignissim sodales ut eu. Sit amet nisl suscipit adipiscing bibendum est
-		ultricies.
+		<LocationPinIcon width={15} height={15} />
+		Adelaide, South Australia
+	</p>
+	<p>
+		Front-end developer with 6+ years of experience building web applications for local government
+		and healthcare.
+	</p>
+	<p>
+		Loves solving problems by creating modern, reliable and maintainable software while continually
+		striving to expand and hone his technical skill set.
 	</p>
 </section>
 
@@ -32,5 +42,7 @@
 
 	p {
 		max-width: 1200px;
+		margin-block-start: 0.5em;
+		margin-block-end: 0.5em;
 	}
 </style>
