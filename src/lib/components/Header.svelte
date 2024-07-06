@@ -1,8 +1,8 @@
 <script>
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
-	import ghlogo from '$lib/assets/icons8-github.svg';
-	import lilogo from '$lib/assets/icons8-linkedin.svg';
+	import GitHubIcon from '$lib/components/GitHubIcon.svelte';
+	import LinkedInIcon from '$lib/components/LinkedInIcon.svelte';
 </script>
 
 <header>
@@ -32,8 +32,12 @@
 			</ul>
 		</nav>
 		<div class="vertical-separator" />
-		<img alt="GitHub Logo" src={ghlogo} width="30" />
-		<img alt="LinkedIn Logo" src={lilogo} width="30" />
+		<a class="icon-link" href="https://github.com/vclisby" target="_blank"
+			><GitHubIcon width={30} height={30} /></a
+		>
+		<a class="icon-link" href="https://www.linkedin.com/in/victorclisby/" target="_blank"
+			><LinkedInIcon width={30} height={30} /></a
+		>
 	</div>
 </header>
 
@@ -89,15 +93,28 @@
 		padding: 0;
 	}
 
+	a,
+	svg {
+		transition: 0.2s;
+	}
+
+	.icon-link {
+		height: 30px;
+	}
+
 	a:hover {
-		color: var(--color-theme-1);
+		color: #000;
+
+		& svg {
+			fill: #000;
+		}
 	}
 
 	li[aria-current='page'] .active-dot {
 		position: absolute;
 		width: 5px;
 		height: 5px;
-		background-color: rgba(102, 102, 102, 0.3);
+		background-color: rgba(102, 102, 102, 0.5);
 		border-radius: 5px;
 		margin-top: 3px;
 	}
