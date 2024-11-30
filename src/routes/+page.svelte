@@ -12,8 +12,8 @@
 
 <section>
 	<img alt="Victor Clisby @ Huka Falls" src={logo} width="1200" />
-	<p>
-		<LocationPinIcon width={15} height={15} />
+	<p class="location-text">
+		<LocationPinIcon width={12} height={12} fill="#7a7a7a" />
 		Adelaide, South Australia
 	</p>
 	<p>
@@ -44,5 +44,10 @@
 		max-width: 1200px;
 		margin-block-start: 0.5em;
 		margin-block-end: 0.5em;
+	}
+
+	.location-text {
+		color: #7a7a7a;
+		font-size: 12px;
 	}
 </style>
