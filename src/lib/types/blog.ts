@@ -1,8 +1,5 @@
-import type { ComponentType } from 'svelte';
-
 export type BlogPost = {
 	metadata: BlogPostMetaData;
-	default: ComponentType;
 };
 
 export type BlogPostMetaData = {

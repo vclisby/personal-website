@@ -2,14 +2,8 @@ import type { BlogPost, BlogPostMetaData, BlogPostMetaDataAndPath } from '$lib/t
 import { isString, isObject } from '.';
 
 export function isBlogPost(x: unknown): x is BlogPost {
-	return (
-		x != null &&
-		isObject(x) &&
-		isObject((x as BlogPost).metadata) &&
-		isBlogPostMetaData((x as BlogPost).metadata) &&
-		isObject((x as BlogPost).default)
-		// TODO (Victor): Make the guard for x.default stricter?
-	);
+	// TODO (Victor): Metadata property is actually a getter. Is there a better way to guard this in ts?
+	return x != null && isObject(x) && Object.hasOwn(x, 'metadata');
 }
 
 function isBlogPostMetaData(x: unknown): x is BlogPostMetaData {
