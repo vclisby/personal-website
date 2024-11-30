@@ -1,12 +1,19 @@
 <script>
 	import Header from '$lib/components/Header.svelte';
 	import '$lib/styles.css';
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('svelte').Snippet} [children]
+	 */
+
+	/** @type {Props} */
+	let { children } = $props();
 </script>
 
 <div class="app">
 	<Header />
 	<main>
-		<slot />
+		{@render children?.()}
 	</main>
 </div>
 
