@@ -3,7 +3,7 @@ import { isBlogPost } from '$lib/guards/blog';
 import type { BlogPostMetaDataAndPath } from '$lib/types/blog';
 
 export async function fetchBlogPostsMetaData(): Promise<ReadonlyArray<BlogPostMetaDataAndPath>> {
-	const allPostFiles = import.meta.glob('/src/routes/blog/*.md');
+	const allPostFiles = import.meta.glob('/src/routes/blog/posts/*.md');
 	const iterablePostFiles = Object.entries(allPostFiles);
 
 	const allPosts = await Promise.all(

@@ -1,3 +1,5 @@
+import type { ComponentType } from 'svelte';
+
 export type BlogPost = {
 	metadata: BlogPostMetaData;
 };
@@ -11,4 +13,5 @@ export type BlogPostMetaData = {
 export type BlogPostMetaDataAndPath = {
 	metadata: BlogPostMetaData;
 	path: string;
+	default: ComponentType;
 };

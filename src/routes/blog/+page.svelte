@@ -9,16 +9,17 @@
 
 <section>
 	<ul>
-		{#each data.posts as post}
+		{#each data.posts as { path, default: Content, metadata }}
 			<li>
 				<h2>
-					<a href="{base}{post.path}">
-						{post.metadata.title}
+					<a href="{base}{path}">
+						{metadata.title}
 					</a>
 				</h2>
-				<span class="date">{post.metadata.date} | </span>
-				<span class="categories">{post.metadata.categories}</span>
+				<span class="date">{metadata.date} | </span>
+				<span class="categories">{metadata.categories}</span>
 				<p>Blog post preview to go here...</p>
+				<Content />
 			</li>
 		{/each}
 	</ul>
