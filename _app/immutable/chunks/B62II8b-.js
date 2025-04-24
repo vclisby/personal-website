@@ -1,1 +1,0 @@
-import{t as e,a}from"./BAA0orRf.js";import"./Dr6oYTwr.js";import{B as m}from"./DmcTIoUf.js";const r={title:"Post Two",date:"2022-12-14"},{title:d,date:l}=r;var p=e("<p>Hello, I am <em>Post Two.</em></p> <p><strong>Nice to meet you!</strong></p>",1);function f(t){var o=p();m(2),a(t,o)}export{f as default,r as metadata};

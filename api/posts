@@ -1,1 +1,1 @@
-[{"metadata":{"title":"Post Two","date":"2022-12-14"},"path":"/blog/2"},{"metadata":{"title":"Post One","date":"2021-12-14"},"path":"/blog/1"}]
+[{"metadata":{"title":"This is the title of a blog post and it is very detailed","date":"2022-12-14","categories":["foo2","bar2","baz2"]},"path":"/blog/posts/2"},{"metadata":{"title":"This is also the title of a blog post and it is also very detailed","date":"2021-12-14","categories":["foo","bar","baz"]},"path":"/blog/posts/1"}]
