@@ -1,0 +1,1 @@
+import{t as o,a}from"./T-YP5HX_.js";import"./CRDyzWDO.js";import{z as m}from"./BLG21-vB.js";const r={title:"Post One",date:"2021-12-14"},{title:d,date:l}=r;var n=o("<p>Hello, I am <em>Post One.</em></p> <p><strong>Nice to meet you!</strong></p>",1);function f(t){var e=n();m(2),a(t,e)}export{f as default,r as metadata};
