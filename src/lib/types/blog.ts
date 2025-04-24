@@ -5,6 +5,7 @@ export type BlogPost = {
 export type BlogPostMetaData = {
 	title: string;
 	date: string;
+	categories: ReadonlyArray<string>;
 };
 
 export type BlogPostMetaDataAndPath = {

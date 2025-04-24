@@ -1,5 +1,5 @@
 import type { BlogPost, BlogPostMetaData, BlogPostMetaDataAndPath } from '$lib/types/blog';
-import { isString, isObject } from '.';
+import { isString, isObject, isArrayOfType } from '.';
 
 export function isBlogPost(x: unknown): x is BlogPost {
 	// TODO (Victor): Metadata property is actually a getter. Is there a better way to guard this in ts?
@@ -11,7 +11,8 @@ function isBlogPostMetaData(x: unknown): x is BlogPostMetaData {
 		x != null &&
 		isObject(x) &&
 		isString((x as BlogPostMetaData).title) &&
-		isString((x as BlogPostMetaData).date)
+		isString((x as BlogPostMetaData).date) &&
+		isArrayOfType<string>((x as BlogPostMetaData).categories, isString)
 	);
 }
 
