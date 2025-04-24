@@ -3,9 +3,9 @@
 	import LocationPinIcon from '$lib/components/LocationPinIcon.svelte';
 	import { getYearsBetweenDates } from '$lib/utilities/dateTime';
 
-	const startDate = new Date(2018, 0, 22);
+	const professionalStartDate = new Date(2018, 0, 22);
 	const today = new Date();
-	const years = getYearsBetweenDates(startDate, today);
+	const professionalYearCount = getYearsBetweenDates(professionalStartDate, today);
 </script>
 
 <svelte:head>
@@ -19,8 +19,8 @@
 		Adelaide, South Australia
 	</p>
 	<p>
-		Front-end developer with {years}+ years of experience building web applications for local
-		government and healthcare.
+		Front-end developer with {professionalYearCount}+ years of experience building web applications
+		for local government and healthcare.
 	</p>
 	<p>
 		Loves solving problems by creating modern, reliable and maintainable software while continually
