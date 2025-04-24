@@ -112,8 +112,10 @@
 	}
 
 	@media screen and (max-width: 600px) {
-		.title {
-			font-size: 18px;
+		header {
+			.title {
+				font-size: 18px;
+			}
 		}
 	}
 </style>
