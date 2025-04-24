@@ -21,7 +21,7 @@
 				</li>
 			</ul>
 		</nav>
-		<div class="vertical-separator" />
+		<div class="vertical-separator"></div>
 		<a class="icon-link" href="https://github.com/vclisby" target="_blank"
 			><GitHubIcon width={30} height={30} /></a
 		>
