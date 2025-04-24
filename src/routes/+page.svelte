@@ -26,7 +26,6 @@
 		Loves solving problems by creating modern, reliable and maintainable software while continually
 		striving to expand and hone his technical skill set.
 	</p>
-	<p>{today.toString()}</p>
 </section>
 
 <style>
