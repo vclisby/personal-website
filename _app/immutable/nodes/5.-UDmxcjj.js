@@ -1,1 +1,0 @@
-import{t as r,a}from"../chunks/T-YP5HX_.js";import"../chunks/CRDyzWDO.js";import{$ as i}from"../chunks/BLG21-vB.js";import{h as e}from"../chunks/CrWzfetV.js";var m=r("<section><h1>Victor Clisby Work</h1></section>");function f(o){var t=m();e(n=>{i.title="Work - Victor Clisby"}),a(o,t)}export{f as component};
